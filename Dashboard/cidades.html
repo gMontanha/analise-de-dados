@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="css/index.css"></link>
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Galeria Brasileira</h1>
+    </header>
+
+    <div class="gallery" id="imageGallery">
+        <img src="img/cidade/cidade_ar_limpo.png" alt="Imagem 1" onclick="openModal('img/cidade/cidade_ar_limpo.png')">
+        <img src="img/cidade/cidade_ar_sujo.png" alt="Imagem 2" onclick="openModal('img/cidade/cidade_ar_sujo.png')">
+        <img src="img/cidade/cidade_agua_limpa.png" alt="Imagem 3" onclick="openModal('img/cidade/cidade_agua_limpa.png')">
+        <img src="img/cidade/cidade_agua_suja.png" alt="Imagem 4" onclick="openModal('img/cidade/cidade_agua_suja.png')">
+        <img src="img/cidade/scatter_cidade.png" alt="Imagem 5" onclick="openModal('img/cidade/scatter_cidade.png')">
+        <img src="img/cidade/heat_cidade.png" alt="Imagem 6" onclick="openModal('img/cidade/heat_cidade.png')">
+        <span></span>
+        <a href="index.html">Países</a>
+        <span></span>
+        <br>
+    </div>
+
+
+    <!-- Modal para a visualização ampliada -->
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <div class="modal-content">
+            <img id="modalImage" alt="Imagem Ampliada">
+        </div>
+    </div>
+</body>
+</html>
